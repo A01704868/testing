@@ -94,23 +94,23 @@ function VistaParque() {
   useEffect(() => {
     const getData = () => {
       let promise1 = axios.get(
-        "http://localhost:4000/api/parques/parque/" + id
+        "http://159.223.174.63:4000/api/parques/parque/" + id
       );
 
       let promise2 = axios.get(
-        "http://localhost:4000/api/parques/pActivities/" + id
+        "http://159.223.174.63:4000/api/parques/pActivities/" + id
       );
 
       let promise3 = axios.get(
-        "http://localhost:4000/api/parques/activityImg/" + id
+        "http://159.223.174.63:4000/api/parques/activityImg/" + id
       );
 
       let promise4 = axios.get(
-        "http://localhost:4000/api/parques/parkFauna/" + id
+        "http://159.223.174.63:4000/api/parques/parkFauna/" + id
       );
 
       let promise5 = axios.get(
-        "http://localhost:4000/api/parques/parkFlora/" + id
+        "http://159.223.174.63:4000/api/parques/parkFlora/" + id
       );
 
       Promise.all([promise1, promise2, promise3, promise4, promise5])

@@ -8,7 +8,7 @@ import ContactoAgregar from "./ContactoAgregar";
 import { RBACWrapper } from "react-simple-rbac";
 import { AppRoles } from "../App";
 
-const contactoUrl = "http://localhost:4000/api/encargado";
+const contactoUrl = "http://159.223.174.63:4000/api/encargado";
 
 const Contacto = ({ id }) => {
   const [contactoData, setContactoData] = useState({

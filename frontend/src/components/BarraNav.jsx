@@ -16,7 +16,7 @@ function BarraNav() {
 
   const cerrarSesion = () => {
     try {
-      let response = axios.get("http://localhost:4000/api/auth/logout")
+      let response = axios.get("http://159.223.174.63:4000/api/auth/logout")
         .then(function (response) {
           console.log(response);
         })

@@ -3,7 +3,7 @@ import "../css/customStyles.css";
 import { Carousel } from "react-bootstrap";
 
 const carousel = (show) => {
-  const url = "http://localhost:4000/api/parques/img/" + show.id;
+  const url = "http://159.223.174.63:4000/api/parques/img/" + show.id;
 
   return (
     <Carousel.Item key={show.id}>
@@ -16,5 +16,4 @@ const carousel = (show) => {
     </Carousel.Item>
   );
 };
-
 export default carousel;

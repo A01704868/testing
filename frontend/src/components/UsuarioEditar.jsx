@@ -5,7 +5,7 @@ import { Modal, Button, Form } from "react-bootstrap";
 import { RBACWrapper } from "react-simple-rbac";
 import { AppRoles } from "../App";
 
-const usuarioUrl = "http://localhost:4000/api/users";
+const usuarioUrl = "http://159.223.174.63:4000/api/users";
 const editarUsuario = (usuario, onClose) => {
     if (!usuario) {
         return;

@@ -20,7 +20,7 @@ function FloraId() {
   useEffect(() => {
     const getData = () => {
       let promise1 = axios.get(
-        "http://localhost:4000/api/parques/flora/" + id
+        "http://159.223.174.63:4000/api/parques/flora/" + id
       );
 
       Promise.all([promise1])

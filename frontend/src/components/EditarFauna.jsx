@@ -20,7 +20,7 @@ function EditarFauna() {
   useEffect(() => {
     const getData = async () => {
       let promise1 = await axios.get(
-        "http://localhost:4000/api/parques/fauna/" + id
+        "http://159.223.174.63:4000/api/parques/fauna/" + id
       );
 
       Promise.all([promise1])

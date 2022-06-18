@@ -20,7 +20,7 @@ function CrearAnuncio(){
     useEffect(() => {
     
         const getData = () => {
-          let promise1 = axios.get("http://localhost:4000/api/parques");
+          let promise1 = axios.get("http://159.223.174.63:4000/api/parques");
     
           Promise.all([promise1])
             .then((values) => {
@@ -46,7 +46,7 @@ function CrearAnuncio(){
     async function submit(e){
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:4000/api/parques/anuncio', {
+            const response = await axios.post('http://159.223.174.63:4000/api/parques/anuncio', {
                 titulo: data.titulo,
                 descripcion: data.descripcion,
                 variante: data.variante,

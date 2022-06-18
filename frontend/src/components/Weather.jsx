@@ -19,7 +19,7 @@ const Weather = ({ longitude, latitude }) => {
         return;
       }
 
-      const weatherUrl = "http://localhost:4000/api/weather/coordinates/";
+      const weatherUrl = "http://159.223.174.63:4000/api/weather/coordinates/";
       const response = axios.post(weatherUrl, { latitude, longitude });
 
       response
