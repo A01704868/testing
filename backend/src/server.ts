@@ -22,7 +22,7 @@ const app = express();
 const cors = require('cors');
 
 const corsOptions ={
-    origin:'http://localhost:3000', 
+    origin:'http://http://159.223.174.63/:3000', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
