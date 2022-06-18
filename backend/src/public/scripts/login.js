@@ -28,7 +28,7 @@ var app = new Vue({
             });
 
             if (response.status === 200) {
-                window.location.href = "http://localhost:3000";
+                window.location.href = "http://159.223.174.63:3000/";
             } else if (response.status === 401) {
                 this.error = true;
                 this.errorMsg = "Email o contraseña incorrecta";
@@ -52,7 +52,7 @@ var app = new Vue({
             });
 
             if (response.status === 201) {
-                window.location.href = "http://localhost:4000";
+                window.location.href = "http://159.223.174.63:4000/";
             } else if (response.status === 401) {
                 this.error = true;
                 this.errorMsg = "No autorizado";
