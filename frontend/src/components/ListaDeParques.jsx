@@ -129,9 +129,9 @@ function ListaDeParques() {
     }
 
     const getData = () => {
-      let promise1 = axios.get("http://159.223.174.63:4000/api/parques");
+      let promise1 = axios.get("http://localhost:4000/api/parques");
 
-      let promise2 = axios.get("http://159.223.174.63:4000/api/parques/activity");
+      let promise2 = axios.get("http://localhost:4000/api/parques/activity");
 
       Promise.all([promise1, promise2])
         .then(values => { setParques(values[0].data); setActivityButton(values[1].data); })
